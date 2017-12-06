@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="reza.raul.rm">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon512"
+        android:label="AMP"
+        android:roundIcon="@drawable/icon512"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".temp_activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Registro" />
+        <!-- - <activity android:name=".actividaddepacientes.amigos.amigos"></activity> -->
+        <activity android:name=".mensajeria.Mensajeria">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ActividadDePacientes.MenuPacientes" />
+        <activity android:name=".ActividadDePacientes.MenuMedico" />
+        <activity android:name=".ActividadDePacientes.citasPacientes.citaPacientes.detallePacientes.DetallePaciente" />
+        <activity android:name=".ActividadDePacientes.citasPacientes.citaMedico.detalleMedicos.DetalleMedico" />
+
+        <service
+            android:name=".services.FireBaseId"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".services.FireBaseService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".ActividadDePacientes.citasPacientes.RegistroCitas.RegistroCita">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ActividadDePacientes.MenuMedico"/>
+        </activity>
+    </application>
+
+</manifest>

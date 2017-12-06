@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "758292477446",
+    "firebase_url": "https://rm-amp.firebaseio.com",
+    "project_id": "rm-amp",
+    "storage_bucket": "rm-amp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:758292477446:android:ad95e2abc29f8624",
+        "android_client_info": {
+          "package_name": "reza.raul.rm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "758292477446-7iokj3qkntu4hch8aio37rl5tbtbs04o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChxc2YxJT4iMT_bXH7EXsUTF16b1QaQS4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
